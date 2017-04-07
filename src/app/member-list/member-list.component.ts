@@ -12,6 +12,7 @@ import { Member } from '../member.model';
 })
 export class MemberListComponent implements OnInit {
   members;
+  filterByPosition: string = "positions";
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -21,6 +22,10 @@ export class MemberListComponent implements OnInit {
 
   goToMember(member) {
     this.router.navigate(['member', member.$key]);
-  };
+  }
+
+  positionChange(selectedPosition) {
+    this.filterByPosition = selectedPosition;
+  }
 
 }

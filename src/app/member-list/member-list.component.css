@@ -14,3 +14,8 @@
 .panel {
   border-radius: 0;
 }
+
+select:focus {
+  box-shadow: 0 0 5px #ff928c;
+  border: 1px solid #ff928c;
+}

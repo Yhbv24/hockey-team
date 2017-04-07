@@ -6,12 +6,11 @@
     <div class="col-sm-3">
     </div>
     <div class="col-sm-6">
-      <select class="form-control">
-        <option value="none" selected>Select a filter:</option>
-        <option value="allMembers">All Team Members</option>
-        <option value="forwards">All Forwards</option>
+      <select class="form-control" (change)="positionChange($event.target.value)">
+        <option value="allMembers" selected>All Team Members</option>
+        <option value="forward">All Forwards</option>
         <option value="defense">All Defense</option>
-        <option value="goalies">All Goaltenders</option>
+        <option value="goalie">All Goaltenders</option>
         <option value="staff">All Staff</option>
       </select>
     </div>
@@ -19,7 +18,7 @@
     </div>
   </div><br>
   <div class="row">
-    <div class="col-xs-3 players" *ngFor="let member of members | async" (click)="goToMember(member)">
+    <div class="col-xs-3 players" *ngFor="let member of members | async | position:filterByPosition" (click)="goToMember(member)">
       <div class="panel panel-default">
         <div class="panel-heading">
           {{member.firstName}} {{member.lastName}}
