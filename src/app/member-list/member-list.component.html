@@ -1,3 +1,27 @@
 <div class="jumbotron">
   <h1>Our Team Members</h1>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-3 players" *ngFor="let member of members | async">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          {{member.firstName}} {{member.lastName}}
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-8">
+              <p><strong>Role:</strong> {{member.role}}</p>
+              <p><strong>Position:</strong> {{member.position}}</p>
+              <p><strong>Nationality:</strong> {{member.nationality}}</p>
+              <p><strong>Age:</strong> {{member.age}}</p>
+            </div>
+            <div class="col-xs-4">
+              <img src="{{member.photo}}" alt="A photo of {{member.firstName}} {{member.lastName}}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

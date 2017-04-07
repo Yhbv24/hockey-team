@@ -1,8 +1,8 @@
 {
   "members": [
     {
-      "first_name": "Wayne",
-      "last_name:": "Gretzky",
+      "firstName": "Wayne",
+      "lastName:": "Gretzky",
       "role": "player",
       "position": "center",
       "nationality": "Canadian",
@@ -10,8 +10,8 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/0/00/Wgretz_edit2.jpg"
     },
     {
-      "first_name": "Roberto",
-      "last_name:": "Luongo",
+      "firstName": "Roberto",
+      "lastName:": "Luongo",
       "role": "player",
       "position": "goalie",
       "nationality": "Canadian",
@@ -19,8 +19,8 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/5/52/Roberto_Luongo_2009_training_camp_2.jpg"
     },
     {
-      "first_name": "Henrik",
-      "last_name:": "Sedin",
+      "firstName": "Henrik",
+      "lastName:": "Sedin",
       "role": "player",
       "position": "center",
       "nationality": "Swedish",
@@ -28,8 +28,8 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Blackhawks_vs_Canucks_102010_-_Henrik_Sedin_crop.jpg"
     },
     {
-      "first_name": "Jaromír",
-      "last_name:": "Jágr",
+      "firstName": "Jaromír",
+      "lastName:": "Jágr",
       "role": "player",
       "position": "right wing",
       "nationality": "Czech",
