@@ -46,3 +46,7 @@ The goal of this project is to familiarize myself with Angular and Firebase. The
 2. Navigate into the project folder.
 3. Run `npm install`, then `bower install`, then run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+OR
+
+* Navigate to `https://hockey-team-40f05.firebaseapp.com/` in your browser.
