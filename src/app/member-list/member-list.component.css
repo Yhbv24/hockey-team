@@ -6,3 +6,7 @@
 .players img:hover {
   transform: scale(2.3);
 }
+
+.panel {
+  border-radius: 0;
+}

@@ -1,12 +1,15 @@
 <div class="jumbotron">
-  <h1>Add a Team Member</h1>
+  <h1>Admin</h1>
 </div>
 <div class="container">
+  <div class="center">
+    <button type="button" class="btn" (click)="formToggle()">Add a Team Member</button><br><br>
+  </div>
   <div class="row">
     <div class="col-xs-2">
     </div>
     <div class="col-xs-8">
-      <form>
+      <form *ngIf="showAddForm">
         <div class="form-group">
           <label for="first-name">First Name:</label>
           <input type="text" class="form-control" #firstName placeholder="your first name">
@@ -60,4 +63,31 @@
     <div class="col-xs-2">
     </div>
   </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Position</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let member of members | async">
+          <tr>
+            <td>{{member.firstName}} {{member.lastName}}</td>
+            <td>{{member.role}}</td>
+            <td>{{member.position}}</td>
+            <td><button type="button" class="btn btn-xs btn-info">Edit</button></td>
+            <td><button type="button" class="btn btn-xs btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-2">
+    </div>
 </div>

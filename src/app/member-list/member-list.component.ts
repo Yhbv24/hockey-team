@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Router } from '@angular/router';
-import { Member } from '../member.model';
 import { MemberService } from '../member.service';
+import { Member } from '../member.model';
 
 @Component({
   selector: 'app-member-list',
