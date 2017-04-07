@@ -28,4 +28,9 @@ export class MemberService {
     memberInDatabase.remove();
   }
 
+  delete(member){
+    var memberToDelete = this.getMemberById(member.$key);
+    memberToDelete.remove();
+  }
+
 }

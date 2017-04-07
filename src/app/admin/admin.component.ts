@@ -28,6 +28,16 @@ export class AdminComponent implements OnInit {
     }
   }
 
+  showEditForm(member) {
+    console.log(member);
+  }
+
+  deleteMember(member){
+    if(confirm("Are you sure you want to delete this team member? There is no going back.")) {
+      this.memberService.delete(member);
+    }
+  }
+
   newMember(firstName: string, lastName: string, role: string, position: string, nationality: string, age: number, photo: string, bio: string) {
     var newMember: Member = new Member(firstName, lastName, role, position, nationality, age, photo, bio);
     this.memberService.saveMember(newMember);

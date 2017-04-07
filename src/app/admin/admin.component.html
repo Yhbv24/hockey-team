@@ -82,8 +82,8 @@
             <td>{{member.firstName}} {{member.lastName}}</td>
             <td>{{member.role}}</td>
             <td>{{member.position}}</td>
-            <td><button type="button" class="btn btn-xs btn-info">Edit</button></td>
-            <td><button type="button" class="btn btn-xs btn-danger">Delete</button></td>
+            <td><button type="button" class="btn btn-xs btn-info" (click)="showEditForm(member)">Edit</button></td>
+            <td><button type="button" class="btn btn-xs btn-danger" (click)="deleteMember(member)">Delete</button></td>
           </tr>
         </tbody>
       </table>

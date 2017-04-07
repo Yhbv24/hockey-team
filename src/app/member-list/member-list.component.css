@@ -3,6 +3,10 @@
   border: 1px solid black;
 }
 
+.players:hover {
+  cursor: pointer;
+}
+
 .players img:hover {
   transform: scale(2.3);
 }
