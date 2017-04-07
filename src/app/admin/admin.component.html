@@ -67,7 +67,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8">
-      <table class="table">
+      <table class="table table-striped table-hover">
         <thead>
           <tr>
             <th>Name</th>
@@ -77,8 +77,8 @@
             <th>Delete</th>
           </tr>
         </thead>
-        <tbody *ngFor="let member of members | async">
-          <tr>
+        <tbody>
+          <tr *ngFor="let member of members | async">
             <td>{{member.firstName}} {{member.lastName}}</td>
             <td>{{member.role}}</td>
             <td>{{member.position}}</td>

@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { IndivMemberComponent } from './indiv-member/indiv-member.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
+import { PositionPipe } from './position.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,7 +34,8 @@ export const firebaseConfig = {
     FooterComponent,
     IndivMemberComponent,
     AdminComponent,
-    EditMemberComponent
+    EditMemberComponent,
+    PositionPipe
   ],
   imports: [
     BrowserModule,

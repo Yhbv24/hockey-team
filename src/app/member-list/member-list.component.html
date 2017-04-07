@@ -3,6 +3,22 @@
 </div>
 <div class="container">
   <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6">
+      <select class="form-control">
+        <option value="none" selected>Select a filter:</option>
+        <option value="allMembers">All Team Members</option>
+        <option value="forwards">All Forwards</option>
+        <option value="defense">All Defense</option>
+        <option value="goalies">All Goaltenders</option>
+        <option value="staff">All Staff</option>
+      </select>
+    </div>
+    <div class="col-sm-3">
+    </div>
+  </div><br>
+  <div class="row">
     <div class="col-xs-3 players" *ngFor="let member of members | async" (click)="goToMember(member)">
       <div class="panel panel-default">
         <div class="panel-heading">
