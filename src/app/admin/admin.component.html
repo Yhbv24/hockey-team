@@ -84,7 +84,7 @@
             <td>{{member.position}}</td>
             <td>
               <button type="button" class="btn btn-xs btn-info" (click)="editFormToggle(member)">Edit</button>
-              <app-edit-member *ngIf="showEditForm" [member]="member"></app-edit-member>
+              <app-edit-member *ngIf="member.isAdmin" [member]="member"></app-edit-member>
             </td>
             <td><button type="button" class="btn btn-xs btn-danger" (click)="deleteMember(member)">Delete</button></td>
           </tr>

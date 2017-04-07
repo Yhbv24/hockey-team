@@ -13,7 +13,6 @@ import { Member } from '../member.model';
 export class AdminComponent implements OnInit {
   members;
   showAddForm: boolean = false;
-  showEditForm: boolean = false;
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -30,10 +29,10 @@ export class AdminComponent implements OnInit {
   }
 
   editFormToggle(member) {
-    if (this.showEditForm) {
-      this.showEditForm = false;
+    if (member.isAdmin) {
+      member.isAdmin = false;
     } else {
-      this.showEditForm = true;
+      member.isAdmin = true;
     }
   }
 
