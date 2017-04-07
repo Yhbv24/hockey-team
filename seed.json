@@ -2,39 +2,43 @@
   "members": [
     {
       "firstName": "Wayne",
-      "lastName:": "Gretzky",
+      "lastName": "Gretzky",
       "role": "player",
       "position": "center",
       "nationality": "Canadian",
       "age": "56",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/0/00/Wgretz_edit2.jpg"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/0/00/Wgretz_edit2.jpg",
+      "bio": "Wayne Douglas Gretzky is a Canadian former professional ice hockey player and former head coach. He played twenty seasons in the National Hockey League (NHL) for four teams from 1979 to 1999. Nicknamed 'The Great One', he has been called 'the greatest hockey player ever' by many sportswriters, players, and the league itself. He is the leading scorer in NHL history, with more goals and assists than any other player. He garnered more assists than any other player scored total points, and is the only NHL player to total over 200 points in one season – a feat he accomplished four times. In addition, he tallied over 100 points in 16 professional seasons, 14 of them consecutive. At the time of his retirement in 1999, he held 61 NHL records: 40 regular-season records, 15 playoff records, and six All-Star records. As of 2014, he still holds 60 NHL records."
     },
     {
       "firstName": "Roberto",
-      "lastName:": "Luongo",
+      "lastName": "Luongo",
       "role": "player",
       "position": "goalie",
       "nationality": "Canadian",
       "age": "37",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/5/52/Roberto_Luongo_2009_training_camp_2.jpg"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/5/52/Roberto_Luongo_2009_training_camp_2.jpg",
+      "bio": "Roberto Luongo is a Canadian professional ice hockey goaltender for the Florida Panthers of the National Hockey League (NHL). Born in Montreal, Quebec, he is of Italian and Irish ancestry. He employs the butterfly style of goaltending and has previously played in the NHL for the New York Islanders and the Vancouver Canucks. Luongo is a two-time NHL Second All-Star (2004 and 2007) and a winner of the William M. Jennings Trophy for backstopping his team to the lowest goals-against average in the league (2011; with backup Cory Schneider). He has additionally been a finalist for the Vezina Trophy as the league's best goaltender (2004, 2007 and 2011), the Lester B. Pearson Award as the top player voted by his peers (2004 and 2007) and the Hart Memorial Trophy as the league's most valuable player (2007)."
     },
     {
       "firstName": "Henrik",
-      "lastName:": "Sedin",
+      "lastName": "Sedin",
       "role": "player",
       "position": "center",
       "nationality": "Swedish",
       "age": "36",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Blackhawks_vs_Canucks_102010_-_Henrik_Sedin_crop.jpg"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Blackhawks_vs_Canucks_102010_-_Henrik_Sedin_crop.jpg",
+      "bio": "Henrik Lars Sedin is a Swedish professional ice hockey centre who currently serves as captain of the Vancouver Canucks of the National Hockey League (NHL). His identical twin brother Daniel also plays for the Canucks. Having played together throughout their careers, the pair are known for their effectiveness playing off one another. Henrik, a skilled passer, is known as the playmaker, while Daniel is known as the goalscorer. On 15 February 2013, Henrik Sedin became the all-time leading scorer for the Vancouver Canucks. On January 20, 2017 Henrik earned the 1,000th point of his career all earned while in a Canuck Uniform against former teammate and current Florida Panthers Goalie Roberto Luongo."
     },
     {
       "firstName": "Jaromír",
-      "lastName:": "Jágr",
+      "lastName": "Jágr",
       "role": "player",
       "position": "right wing",
       "nationality": "Czech",
       "age": "45",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Jagr_Czech1.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Jagr_Czech1.png",
+      "bio": "Jaromír Jágr is a Czech professional ice hockey right winger currently playing for the Florida Panthers of the National Hockey League (NHL). He has formerly played in the NHL with the Pittsburgh Penguins, Washington Capitals, New York Rangers, Philadelphia Flyers, Dallas Stars, Boston Bruins and New Jersey Devils, serving as captain of the Penguins and the Rangers. After leaving the Rangers, he played for three seasons in the Kontinental Hockey League (KHL) with Avangard Omsk before returning to the NHL with the Flyers."
     }
   ]
 }

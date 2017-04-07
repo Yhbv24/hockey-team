@@ -5,6 +5,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 @Injectable()
 export class MemberService {
   members: FirebaseListObservable<any[]>;
+  admin: boolean = false;
 
   constructor(private angularFire: AngularFire) {
     this.members = angularFire.database.list('members');
@@ -16,6 +17,10 @@ export class MemberService {
 
   saveMember(newMember: Member) {
     this.members.push(newMember);
+  }
+
+  getMemberById(memberId: string){
+    return this.angularFire.database.object('members/' + memberId);
   }
 
 }

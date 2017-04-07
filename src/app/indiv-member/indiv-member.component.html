@@ -1,0 +1,21 @@
+<div class="jumbotron">
+  <h1>{{(member | async)?.firstName}} {{(member | async)?.lastName}}</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-7">
+      <h3>{{(member | async)?.firstName}} {{(member | async)?.lastName}}</h3>
+      <h3><strong>Role:</strong> {{(member | async)?.role}}</h3>
+      <h3><strong>Position:</strong> {{(member | async)?.position}}</h3>
+      <h3><strong>Nationality:</strong> {{(member | async)?.nationality}}</h3>
+      <h3><strong>Age:</strong> {{(member | async)?.age}}</h3>
+      <h3><strong>Bio:</strong></h3>
+      <h4 class="bio">{{(member | async)?.bio}}</h4>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-4 img-display">
+      <img src="{{(member | async)?.photo}}" alt="{{(member | async)?.firstName}} {{(member | async)?.lastName}}">
+    </div>
+</div>

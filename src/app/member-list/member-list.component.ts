@@ -19,4 +19,8 @@ export class MemberListComponent implements OnInit {
     this.members = this.memberService.getMembers()
   }
 
+  goToMember(member) {
+    this.router.navigate(['member', member.$key]);
+  };
+
 }

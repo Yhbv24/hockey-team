@@ -13,6 +13,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NewMemberComponent } from './new-member/new-member.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { IndivMemberComponent } from './indiv-member/indiv-member.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     NavBarComponent,
     NewMemberComponent,
     MemberListComponent,
-    FooterComponent
+    FooterComponent,
+    IndivMemberComponent
   ],
   imports: [
     BrowserModule,

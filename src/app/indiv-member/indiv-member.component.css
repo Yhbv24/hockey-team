@@ -1,0 +1,9 @@
+.img-display img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.bio {
+  line-height: 1.3em;
+  margin-left: 20px;
+}

@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NewMemberComponent } from './new-member/new-member.component';
 import { MemberListComponent } from './member-list/member-list.component';
+import { IndivMemberComponent } from './indiv-member/indiv-member.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'member-list',
     component: MemberListComponent
+  },
+  {
+    path: 'member/:id',
+    component: IndivMemberComponent
   }
 ];
 

@@ -17,9 +17,8 @@ export class NewMemberComponent implements OnInit {
   ngOnInit() {
   }
 
-  newMember(firstName: string, lastName: string, role: string, position: string, nationality: string, age: number, photo: string) {
-    var newMember: Member = new Member(firstName, lastName, role, position, nationality, age, photo);
-    console.log(newMember.lastName);
+  newMember(firstName: string, lastName: string, role: string, position: string, nationality: string, age: number, photo: string, bio: string) {
+    var newMember: Member = new Member(firstName, lastName, role, position, nationality, age, photo, bio);
     this.memberService.saveMember(newMember);
     this.router.navigate(['member-list']);
   }
