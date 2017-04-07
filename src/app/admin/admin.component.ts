@@ -47,6 +47,7 @@ export class AdminComponent implements OnInit {
     var newMember: Member = new Member(firstName, lastName, role, position, nationality, age, photo, bio);
     this.memberService.saveMember(newMember);
     this.router.navigate(['admin']);
+    this.showAddForm = false;
   }
 
 }

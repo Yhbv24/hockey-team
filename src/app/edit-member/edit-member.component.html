@@ -1,50 +1,48 @@
-<form>
-  <div class="form-group">
-    <label for="first-name">First Name:</label>
-    <input type="text" class="form-control" #firstName placeholder="your first name">
-  </div>
-  <div class="form-group">
-    <label for="last-name">Last Name:</label>
-    <input type="text" class="form-control" #lastName placeholder="your last name">
-  </div>
-  <div class="form-group">
-    <label for="role">Role:</label>
-    <select class="form-control" #role>
-      <option value="none" selected>Choose One:</option>
-      <option value="player">Player</option>
-      <option value="coach">Coach</option>
-      <option value="staff">Staff</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="position">Position:</label>
-    <select class="form-control" #position>
-      <option value="none" selected>Choose One:</option>
-      <option value="right-wing">Right Wing</option>
-      <option value="left-wing">Left Wing</option>
-      <option value="center">Center</option>
-      <option value="right-defense">Right Defense</option>
-      <option value="left-defence">Left Defense</option>
-      <option value="goalie">Goaltender</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="nationality">Nationality:</label>
-    <input type="text" class="form-control" #nationality>
-  </div>
-  <div class="form-group">
-    <label for="age">Age:</label>
-    <input type="number" class="form-control" #age>
-  </div>
-  <div class="form-group">
-    <label for="bio">Bio:</label>
-    <textarea class="form-control" #bio placeholder="add information/history about this team member here" rows="4"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="photo">Link to Photo:</label>
-    <input type="text" class="form-control" #photo placeholder="please add a URL to the photo">
-  </div>
-  <div class="center">
-    <button type="button" class="btn" (click)="editMember(firstName.value, lastName.value, role.value, position.value, nationality.value, age.value, photo.value, bio.value); firstName.value=''; lastName.value=''; role.value='none'; position.value='none'; nationality.value=''; age.value=''; photo.value=''; bio.value=''">Submit</button>
-  </div>
-</form>
+<div class="form-group">
+  <label for="first-name">First Name:</label>
+  <input type="text" class="form-control" [(ngModel)]="member.firstName">
+</div>
+<div class="form-group">
+  <label for="last-name">Last Name:</label>
+  <input type="text" class="form-control" [(ngModel)]="member.lastName">
+</div>
+<div class="form-group">
+  <label for="role">Role:</label>
+  <select class="form-control" #role>
+    <option value="none" selected>Choose One:</option>
+    <option value="player">Player</option>
+    <option value="coach">Coach</option>
+    <option value="staff">Staff</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="position">Position:</label>
+  <select class="form-control" #position>
+    <option value="none" selected>Choose One:</option>
+    <option value="right-wing">Right Wing</option>
+    <option value="left-wing">Left Wing</option>
+    <option value="center">Center</option>
+    <option value="right-defense">Right Defense</option>
+    <option value="left-defence">Left Defense</option>
+    <option value="goalie">Goaltender</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="nationality">Nationality:</label>
+  <input type="text" class="form-control" [(ngModel)]="member.nationality">
+</div>
+<div class="form-group">
+  <label for="age">Age:</label>
+  <input type="number" class="form-control" [(ngModel)]="member.age">
+</div>
+<div class="form-group">
+  <label for="bio">Bio:</label>
+  <textarea class="form-control" [(ngModel)]="member.bio" rows="4"></textarea>
+</div>
+<div class="form-group">
+  <label for="photo">Link to Photo:</label>
+  <input type="text" class="form-control" [(ngModel)]="member.photo">
+</div>
+<div class="center">
+  <button type="button" class="btn btn-sm" (click)="editMember(member)">Submit Edit</button>
+</div>

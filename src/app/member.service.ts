@@ -33,4 +33,18 @@ export class MemberService {
     memberToDelete.remove();
   }
 
+  update(member){
+    var memberToEdit = this.getMemberById(member.$key);
+    memberToEdit.update({
+      firstName: member.firstName,
+      lastName: member.lastName,
+      role: member.role,
+      position: member.position,
+      nationality: member.nationality,
+      age: member.age,
+      photo: member.photo,
+      bio: member.bio,
+    });
+  }
+
 }
