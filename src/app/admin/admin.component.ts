@@ -13,6 +13,7 @@ import { Member } from '../member.model';
 export class AdminComponent implements OnInit {
   members;
   showAddForm: boolean = false;
+  showEditForm: boolean = false;
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -20,7 +21,7 @@ export class AdminComponent implements OnInit {
     this.members = this.memberService.getMembers()
   }
 
-  formToggle() {
+  addFormToggle() {
     if (this.showAddForm === false) {
       this.showAddForm = true;
     } else {
@@ -28,8 +29,12 @@ export class AdminComponent implements OnInit {
     }
   }
 
-  showEditForm(member) {
-    console.log(member);
+  editFormToggle(member) {
+    if (this.showEditForm) {
+      this.showEditForm = false;
+    } else {
+      this.showEditForm = true;
+    }
   }
 
   deleteMember(member){
@@ -41,7 +46,7 @@ export class AdminComponent implements OnInit {
   newMember(firstName: string, lastName: string, role: string, position: string, nationality: string, age: number, photo: string, bio: string) {
     var newMember: Member = new Member(firstName, lastName, role, position, nationality, age, photo, bio);
     this.memberService.saveMember(newMember);
-    this.router.navigate(['member-list']);
+    this.router.navigate(['admin']);
   }
 
 }

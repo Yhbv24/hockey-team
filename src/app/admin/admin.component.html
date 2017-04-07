@@ -3,7 +3,7 @@
 </div>
 <div class="container">
   <div class="center">
-    <button type="button" class="btn" (click)="formToggle()">Add a Team Member</button><br><br>
+    <button type="button" class="btn" (click)="addFormToggle()">Add a Team Member</button><br><br>
   </div>
   <div class="row">
     <div class="col-xs-2">
@@ -82,7 +82,10 @@
             <td>{{member.firstName}} {{member.lastName}}</td>
             <td>{{member.role}}</td>
             <td>{{member.position}}</td>
-            <td><button type="button" class="btn btn-xs btn-info" (click)="showEditForm(member)">Edit</button></td>
+            <td>
+              <button type="button" class="btn btn-xs btn-info" (click)="editFormToggle(member)">Edit</button>
+              <app-edit-member *ngIf="showEditForm" [member]="member"></app-edit-member>
+            </td>
             <td><button type="button" class="btn btn-xs btn-danger" (click)="deleteMember(member)">Delete</button></td>
           </tr>
         </tbody>
