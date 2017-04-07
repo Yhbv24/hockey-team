@@ -17,6 +17,7 @@ export class EditMemberComponent implements OnInit {
 
   editMember(member) {
     this.memberService.update(member);
+    member.isAdmin = false;
   }
 
 }

@@ -10,7 +10,7 @@ export class PositionPipe implements PipeTransform {
     var output: Member[] = [];
     if (selectedPosition === "allMembers") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].role === "player") {
+        if (input[i].role === "player" || input[i].role === "staff") {
           output.push(input[i]);
         }
       }
@@ -24,7 +24,7 @@ export class PositionPipe implements PipeTransform {
       return output;
     } else if (selectedPosition === "defense") {
         for (var i = 0; i < input.length; i++) {
-          if (input[i].position === "left defense" || input[i].position === "left defense") {
+          if (input[i].position === "defense") {
             output.push(input[i]);
           }
         }
@@ -38,7 +38,7 @@ export class PositionPipe implements PipeTransform {
       return output;
     } else if (selectedPosition === "staff") {
         for (var i = 0; i < input.length; i++) {
-          if (input[i].role === "staff") {
+          if (input[i].position === "coach" || input[i].position === "support") {
             output.push(input[i]);
           }
         }
