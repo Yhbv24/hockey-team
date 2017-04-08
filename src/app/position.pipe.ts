@@ -17,7 +17,7 @@ export class PositionPipe implements PipeTransform {
       return output;
     } else if (selectedPosition === "forward") {
         for (var i = 0; i < input.length; i++) {
-          if (input[i].position === "right wing" || input[i].position === "left wing" || input[i].position === "center") {
+          if (input[i].position === "right-wing" || input[i].position === "left-wing" || input[i].position === "center") {
             output.push(input[i]);
           }
         }

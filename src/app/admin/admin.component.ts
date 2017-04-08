@@ -13,11 +13,20 @@ import { Member } from '../member.model';
 export class AdminComponent implements OnInit {
   members;
   showAddForm: boolean = false;
+  password: string = 'hockey';
 
   constructor(private router: Router, private memberService: MemberService) { }
 
   ngOnInit() {
     this.members = this.memberService.getMembers()
+
+    var pageLoad = prompt('What is the password?');
+
+    if (pageLoad === 'hockey') {
+      this.router.navigate(['admin']);
+    } else {
+      this.router.navigate(['']);
+    }
   }
 
   addFormToggle() {
