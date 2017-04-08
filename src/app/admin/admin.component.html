@@ -1,7 +1,24 @@
 <div class="jumbotron">
   <h1>Admin</h1>
 </div>
-<div class="container">
+<div class="container" *ngIf="!isPassTrue">
+  <div class="row">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="password">Please enter the password:</label>
+        <input type="text" class="form-control" #pass placeholder="please enter password to log in">
+      </div>
+      <div class="center">
+        <button type="button" class="btn" (click)="passCheck(pass.value); pass.value=''">Log In</button>
+      </div>
+    </div>
+    <div class="col-sm-4">
+    </div>
+  </div>
+</div>
+<div class="container" *ngIf="isPassTrue">
   <div class="center">
     <button type="button" class="btn" (click)="addFormToggle()">Add a Team Member</button><br><br>
   </div>

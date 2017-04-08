@@ -3,6 +3,7 @@ import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
 import { Router } from '@angular/router';
 import { MemberService } from '../member.service';
 import { Member } from '../member.model';
+import { password } from '../password';
 
 @Component({
   selector: 'app-admin',
@@ -13,19 +14,19 @@ import { Member } from '../member.model';
 export class AdminComponent implements OnInit {
   members;
   showAddForm: boolean = false;
-  password: string = 'hockey';
+  isPassTrue: boolean = false;
 
   constructor(private router: Router, private memberService: MemberService) { }
 
   ngOnInit() {
     this.members = this.memberService.getMembers()
+  }
 
-    var pageLoad = prompt('What is the password?');
-
-    if (pageLoad === 'hockey') {
-      this.router.navigate(['admin']);
+  passCheck(pass) {
+    if (pass === password) {
+      this.isPassTrue = true;
     } else {
-      this.router.navigate(['']);
+      this.router.navigate(['admin']);
     }
   }
 
