@@ -53,9 +53,7 @@ export class AdminComponent implements OnInit {
   }
 
   newMember(firstName: string, lastName: string, role: string, position: string, nationality: string, age: number, photo: string, bio: string) {
-    if (!firstName || !lastName || !nationality || !age || !photo || !bio) {
-      alert('Please make sure to enter the required information');
-    } else if (role === 'none' || position === 'none') {
+    if (!firstName || !lastName || !nationality || !age || !photo || !bio || role === 'none' || position === 'none') {
       alert('Please make sure to enter the required information');
     } else {
       var newMember: Member = new Member(firstName, lastName, role, position, nationality, age, photo, bio);
