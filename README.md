@@ -44,8 +44,10 @@ The goal of this project is to familiarize myself with Angular and Firebase. The
 
 1. Clone the project from `https://github.com/Yhbv24/hockey-team`.
 2. Navigate into the project folder.
-3. Run `npm install`, then `bower install`, then run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. Create new file in the app directory called `password.ts`.
+4. In the `password.ts` file, type `export const password: string = '_enter your own password here_'` and save the file.
+5. Run `npm install`, then `bower install`, then run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+6. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 OR
 
